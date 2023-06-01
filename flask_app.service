@@ -1,0 +1,14 @@
+
+##  Save file at -   /etc/systemd/system/flask_app.service
+
+[Unit]
+Description=LeafCheck Backend Service - Guava Leaves Disease Detection and Remedies Providing App
+
+[Service]
+User=root
+WorkingDirectory=/root/LeafCheck_Backend
+ExecStart=/usr/bin/python3 /root/LeafCheck_Backend/app.py
+
+Restart=always
+[Install]
+WantedBy=multi-user.target
